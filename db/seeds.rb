@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Book.create(inout: 1,category:"給料",year: 2023,month: 1,amount: 30)
+Book.create(inout: 2,category:"家賃",year: 2023,month: 1,amount: 3)
+Book.create(inout: 2,category:"食費",year: 2023,month: 1,amount: 3)
+Book.create(inout: 2,category:"光熱費",year: 2023,month: 1,amount: 1)
