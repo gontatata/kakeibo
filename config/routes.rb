@@ -7,5 +7,10 @@ Rails.application.routes.draw do
   # patch "/books/:id",to: "books#update"
   # delete "/books/:id",to: "books#destroy"
   resources :books
+
+  get "/signup", to: "users#new"
+  post "/signup", to: "users#create"
+  get "/signin", to: "session#new"
+  post "/signin", to: "session#create"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
