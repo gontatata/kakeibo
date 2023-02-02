@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   get "/signin", to: "session#new"
   post "/signin", to: "session#create"
   get "/signout", to: "session#destroy"
+  get "/users/edit", to: "users#edit", as: "edit_user"
+  patch "/users", to: "users#update", as: "user"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
